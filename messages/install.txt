@@ -1,0 +1,5 @@
+Tron Color Scheme
+-----------------
+You installed the Tron and Tron Legacy Color Schemes!
+
+To use, select it from the color scheme menu.

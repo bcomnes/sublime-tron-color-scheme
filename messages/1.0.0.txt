@@ -1,0 +1,6 @@
+Tron Color Scheme
+-----------------
+
+- Initial port to standalone package.
+- It would be great to develop "extended" variations of this theme.
+- It would also be great to port to the SyntaxHighlightTools system.
