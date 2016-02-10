@@ -6,7 +6,7 @@ A standalone fork of the Tron and Tron Legacy color schemes from [ColorSublime](
 Tron Color Scheme
 ```
 
-ColorSublime is fun to play around with, a second package manager for color thems is a bit excessive.
+ColorSublime is fun to play around with, but a second package manager for color thems is a bit excessive.
 
 Pairs nicely with the [spacegray](https://github.com/kkga/spacegray) UI theme and [Java​Script​Next - ES6 Syntax](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax) extended syntax highlighting.
 
