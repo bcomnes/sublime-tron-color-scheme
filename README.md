@@ -1,6 +1,10 @@
 # sublime-tron-color-scheme
 
-A standalone fork of the Tron and Tron Legacy color schemes from [ColorSublime](http://colorsublime.com/?q=tron).
+A standalone fork of the Tron and Tron Legacy color schemes from [ColorSublime](http://colorsublime.com/?q=tron). Install the following package control package:
+
+```
+Tron Color Scheme
+```
 
 ColorSublime is fun to play around with, a second package manager for color thems is a bit excessive.
 
