@@ -6,7 +6,7 @@ ColorSublime is fun to play around with, a second package manager for color them
 
 Pairs nicely with the [spacegray](https://github.com/kkga/spacegray) UI theme and [Java​Script​Next - ES6 Syntax](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax) extended syntax highlighting.
 
-Lacks good markdown or JSON support.
+Lacks good markdown or JSON support.  See [#Caveats](#caveats)
 
 ![](legacy.png)
 
