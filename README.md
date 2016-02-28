@@ -1,5 +1,7 @@
 # sublime-tron-color-scheme
 
+**WAITING ON PACKAGE CONTROL TO PUBLISH. SEE: https://github.com/bcomnes/sublime-tron-color-scheme/issues/3**
+
 A standalone fork of the Tron and Tron Legacy color schemes from [ColorSublime](http://colorsublime.com/?q=tron). Install the following package control package:
 
 ```
