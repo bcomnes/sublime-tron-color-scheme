@@ -64,3 +64,5 @@ Here are some examples of how to do that:
 ## Acknowledgments
 
 Thank you Dayle Rees and Tim Heckman, the original creators of this fantastic theme.  Thank you ColorSublime for helping put so many fantastic color schemes out into the world.  Thank you to the [dat team](http://dat-data.com/team) for creating the beutiful looking [hyperdrive](https://github.com/mafintosh/hyperdrive) code for the screenshots.
+
+Also available as an atom color scheme: https://atom.io/themes/tron-legacy
