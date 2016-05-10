@@ -44,6 +44,11 @@ settings:
   scope: keyword
   settings:
     foreground: '#748aa6'
+- name: Object Key
+  scope: constant.other.object.key string.unquoted.label
+  settings:
+    foreground: '#00A8C6'
+    # foreground: '#6ee2ff'
 - name: Storage
   scope: storage
   settings:
@@ -94,6 +99,11 @@ settings:
   settings:
     fontStyle: ''
     foreground: '#267fb5'
+- name: Node.js require function
+  scope: support.function.node
+  settings:
+    fontStyle: ''
+    foreground: '#FFB20D'
 - name: Library constant
   scope: support.constant
   settings:
@@ -123,22 +133,26 @@ settings:
   scope: meta.structure.dictionary.json string.quoted.double.json
   settings:
     foreground: '#CFCFC2'
-- name: diff.header
-  scope: meta.diff, meta.diff.header
-  settings:
-    foreground: '#75715E'
+- name: Diff Add
+  scope: markup.inserted
+  settings: {background: '#144212', foreground: '#E6E1DC'}
+- name: Diff Remove
+  scope: markup.deleted
+  settings: {background: '#660000', foreground: '#E6E1DC'}
+- name: Diff Header
+  scope: meta.diff.header, meta.separator.diff, meta.diff.index, meta.diff.range
+  settings: {background: '#2F33AB', foreground: '#75715E'}
 - name: diff.deleted
   scope: markup.deleted
-  settings:
-    foreground: '#00A8C6'
+  settings: {foreground: '#F92672'}
 - name: diff.inserted
   scope: markup.inserted
   settings:
+    backgroud: '#e6db74'
     foreground: '#A6E22E'
 - name: diff.changed
   scope: markup.changed
-  settings:
-    foreground: '#E6DB74'
+  settings: {foreground: '#967EFB'}
 - scope: constant.numeric.line-number.find-in-files - match
   settings:
     foreground: '#8FBE00A0'
