@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-======================================================================
-Tron
-======================================================================
-A Sublime Text 2 / Textmate theme.
-Copyright (c) 2012 Dayle Rees.
-Released under the MIT License <http://opensource.org/licenses/MIT>
-======================================================================
-Find more themes at : https://github.com/daylerees/colour-schemes
-======================================================================
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>name</key>
@@ -20,10 +9,24 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 		<dict>
 			<key>settings</key>
 			<dict>
+				<key>activeGuide</key>
+				<string>#9D550FB0</string>
 				<key>background</key>
 				<string>#14191f</string>
+				<key>bracketContentsForeground</key>
+				<string>#F8F8F2A5</string>
+				<key>bracketContentsOptions</key>
+				<string>underline</string>
+				<key>bracketsForeground</key>
+				<string>#F8F8F2A5</string>
+				<key>bracketsOptions</key>
+				<string>underline</string>
 				<key>caret</key>
 				<string>#F8F8F0</string>
+				<key>findHighlight</key>
+				<string>#FFE792</string>
+				<key>findHighlightForeground</key>
+				<string>#000000</string>
 				<key>foreground</key>
 				<string>#aec2e0</string>
 				<key>invisibles</key>
@@ -32,25 +35,8 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 				<string>#1b232c</string>
 				<key>selection</key>
 				<string>#183c66</string>
-				<key>findHighlight</key>
-				<string>#FFE792</string>
-				<key>findHighlightForeground</key>
-				<string>#000000</string>
 				<key>selectionBorder</key>
 				<string>#183c66</string>
-				<key>activeGuide</key>
-				<string>#9D550FB0</string>
-
-				<key>bracketsForeground</key>
-				<string>#F8F8F2A5</string>
-				<key>bracketsOptions</key>
-				<string>underline</string>
-
-				<key>bracketContentsForeground</key>
-				<string>#F8F8F2A5</string>
-				<key>bracketContentsOptions</key>
-				<string>underline</string>
-
 				<key>tagsOptions</key>
 				<string>stippled_underline</string>
 			</dict>
@@ -88,7 +74,6 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 				<string>#C7F026</string>
 			</dict>
 		</dict>
-
 		<dict>
 			<key>name</key>
 			<string>Built-in constant</string>
@@ -163,7 +148,7 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 			<key>name</key>
 			<string>Class name</string>
 			<key>scope</key>
-			<string>entity.name.class</string>
+			<string>entity.name.class, variable.other.class</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -190,6 +175,19 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 			<string>Function name</string>
 			<key>scope</key>
 			<string>entity.name.function</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#FFB20D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Function variable</string>
+			<key>scope</key>
+			<string>variable.function</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -252,6 +250,19 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Node.js require function</string>
+			<key>scope</key>
+			<string>support.function.node</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#FFB20D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Library constant</string>
 			<key>scope</key>
 			<string>support.constant</string>
@@ -285,6 +296,28 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Instance reference variable</string>
+			<key>scope</key>
+			<string>variable.language.this</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#267fb5</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JS self reference</string>
+			<key>scope</key>
+			<string>variable.language.self</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6ee2ff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -326,14 +359,41 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 				<string>#CFCFC2</string>
 			</dict>
 		</dict>
-
 		<dict>
 			<key>name</key>
-			<string>diff.header</string>
+			<string>Diff Add</string>
 			<key>scope</key>
-			<string>meta.diff, meta.diff.header</string>
+			<string>markup.inserted</string>
 			<key>settings</key>
 			<dict>
+				<key>background</key>
+				<string>#144212</string>
+				<key>foreground</key>
+				<string>#E6E1DC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff Remove</string>
+			<key>scope</key>
+			<string>markup.deleted</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#660000</string>
+				<key>foreground</key>
+				<string>#E6E1DC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff Header</string>
+			<key>scope</key>
+			<string>meta.diff.header, meta.separator.diff, meta.diff.index, meta.diff.range</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#2F33AB</string>
 				<key>foreground</key>
 				<string>#75715E</string>
 			</dict>
@@ -346,7 +406,7 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00A8C6</string>
+				<string>#F92672</string>
 			</dict>
 		</dict>
 		<dict>
@@ -356,6 +416,8 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 			<string>markup.inserted</string>
 			<key>settings</key>
 			<dict>
+				<key>backgroud</key>
+				<string>#e6db74</string>
 				<key>foreground</key>
 				<string>#A6E22E</string>
 			</dict>
@@ -368,10 +430,9 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#E6DB74</string>
+				<string>#967EFB</string>
 			</dict>
 		</dict>
-
 		<dict>
 			<key>scope</key>
 			<string>constant.numeric.line-number.find-in-files - match</string>
@@ -390,7 +451,6 @@ Find more themes at : https://github.com/daylerees/colour-schemes
 				<string>#E6DB74</string>
 			</dict>
 		</dict>
-
 	</array>
 	<key>uuid</key>
 	<string>6BC5629A-D5D9-4337-9674-6355EB039ADB</string>

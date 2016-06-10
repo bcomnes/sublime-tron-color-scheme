@@ -1,0 +1,9 @@
+Tron Color Scheme
+-----------------
+
+- Update Tron Legacy to support JS babel language dfn
+- Switched tron legacy to use YAML language dfn file
+
+Let me know if you want the other colors updated too or if you come across any issues:
+
+https://github.com/bcomnes/sublime-tron-color-scheme/issues

@@ -44,11 +44,13 @@ settings:
   scope: keyword
   settings:
     foreground: '#748aa6'
-- name: Object Key
-  scope: constant.other.object.key string.unquoted.label
-  settings:
-    foreground: '#00A8C6'
-    # foreground: '#6ee2ff'
+#- name: Object Key
+#  scope: constant.other.object.key string.unquoted.label
+#  settings:
+#    foreground: '#FF410D'
+#    # foreground: '#A6E22E'
+#    # foreground: '#00A8C6'
+#    # foreground: '#6ee2ff'
 - name: Storage
   scope: storage
   settings:
@@ -60,7 +62,7 @@ settings:
     fontStyle: italic
     foreground: '#267fb5'
 - name: Class name
-  scope: entity.name.class
+  scope: entity.name.class, variable.other.class
   settings:
     fontStyle: underline
     foreground: '#F79D1E'
@@ -118,6 +120,14 @@ settings:
   scope: support.other.variable
   settings:
     fontStyle: ''
+- name: Instance reference variable
+  scope: variable.language.this
+  settings:
+    foreground: '#267fb5'
+- name: JS self reference
+  scope: variable.language.self
+  settings:
+    foreground: '#6ee2ff'
 - name: Invalid
   scope: invalid
   settings:
