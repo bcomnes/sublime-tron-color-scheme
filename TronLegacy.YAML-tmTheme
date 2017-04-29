@@ -1,7 +1,9 @@
 name: TronLegacy
 settings:
 - settings:
-    activeGuide: '#9D550FB0'
+    guide: '#92003b'
+    activeGuide: '#7fb11b'
+    stackGuide: '#635f2d'
     background: '#14191f'
     bracketContentsForeground: '#F8F8F2A5'
     bracketContentsOptions: underline
