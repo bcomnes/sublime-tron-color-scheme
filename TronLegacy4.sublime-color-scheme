@@ -2,8 +2,21 @@
   "name": "Tron Legacy 4",
   "author": "Hypermodules LLC, Bret Comnes",
   "variables": {
-    "red2": "#FF410D",
-    "red4": "#F92672",
+    "white": "hsl(0, 0%, 100%)",
+    "black": "#000000",
+    "red-string": "#FF410D",
+    "red-error": "#F92672",
+    "green": "#95CC5E",
+    "green-light": "#C7F026",
+    "yellow-highlight": "#FFE792",
+    "orange-entity": "#FFB20D",
+    "blue-bg": "#14191f",
+    "blue-fg": "#aec2e0",
+    "blue-accent": "#6ee2ff",
+    "blue-storage": "#267fb5",
+    "blue-highlight": "#183c66",
+    "gray-copy": "#748aa6",
+    "purple1": "#967EFB",
     "red5": "hsl(357, 79%, 65%)",
     "red1": "#92003b",
     "red3": "#660000",
@@ -13,57 +26,46 @@
     "green11": "#8FBE00A0",
     "green1": "#7fb11b",
     "green8": "#8FBE00",
-    "green5": "#95CC5E",
     "green4": "#A6E22E",
-    "green3": "#C7F026",
-    "black": "#000000",
+
     "gray5": "#1b232c",
     "gray4": "#3B3A32",
     "gray2": "#F8F8F2A5",
     "gray7": "#CFCFC2",
     "gray8": "#E6E1DC",
     "gray3": "#F8F8F0",
-    "white": "hsl(0, 0%, 100%)",
-    "yellow1": "#FFE792",
     "yellow2": "#e6db74",
     "yellow3": "#E6DB74",
-    "orange1": "#FFB20D",
+
     "orange2": "#F79D1E",
-    "blue-bg": "#14191f",
     "blue3": "#324357",
-    "blue4": "#748aa6",
-    "blue-fg": "#aec2e0",
     "blue9": "#d0dfe6",
     "blue5": "#00A8C6",
-    "blue-accent": "#6ee2ff",
-    "blue7": "#267fb5",
-    "blue2": "#183c66",
     "blue8": "#2F33AB",
-    "purple1": "#967EFB",
     "pink": "hsl(300, 30%, 68%)"
   },
   "globals": {
     "foreground": "var(blue-fg)",
     "background": "var(blue-bg)",
     "accent": "var(blue-accent)",
-    "caret": "var(gray3)",
-    "line_highlight": "var(gray5)",
-    "selection": "var(blue2)",
-    "selection_border": "var(blue2)",
-    "inactive_selection": "var(blue3)",
-    "misspelling": "var(red5)",
+    "caret": "color(var(blue-fg) l(90%))",
+    "line_highlight": "color(var(blue-bg) l(20%))",
+    "selection": "var(blue-highlight)",
+    "selection_border": "color(var(blue-highlight) min-contrast(var(blue-highlight) 2.5))",
+    "inactive_selection": "color(var(blue-highlight) l(20%))",
+    "misspelling": "var(red-error)",
     "shadow": "color(var(black) alpha(0.25))",
-    "active_guide": "var(green1)",
-    "stack_guide": "var(green2)",
-    "highlight": "var(orange2)",
-    "find_highlight_foreground": "black",
-    "find_highlight": "var(yellow1)",
+    "active_guide": "var(green-light)",
+    "stack_guide": "color(var(green-light) l(20%))",
+    "highlight": "color(var(yellow-highlight) l(- 20%))",
+    "find_highlight_foreground": "var(blue-bg)",
+    "find_highlight": "var(yellow-highlight)",
     "brackets_options": "underline",
-    "brackets_foreground": "var(gray2)",
-    "bracket_contents_options": "underline",
-    "bracket_contents_foreground": "var(gray2)",
+    "brackets_foreground": "var(blue-accent)",
+    "bracket_contents_options": "stippled_underline",
+    "bracket_contents_foreground": "var(green-light)",
     "tags_options": "stippled_underline",
-    "tags_foreground": "var(pink)"
+    "tags_foreground": "var(green-light)"
   },
   "rules":
     [
@@ -75,34 +77,34 @@
         {
             "name": "String",
             "scope": "string",
-            "foreground": "var(red2)"
+            "foreground": "var(red-string)"
         },
         {
             "name": "Punctuation",
             "scope": "punctuation.definition - punctuation.definition.numeric.base",
-            "foreground": "var(blue4)"
+            "foreground": "var(gray-copy)"
         },
         {
             "name": "Number",
             "scope": "constant.numeric",
-            "foreground": "var(green3)"
+            "foreground": "var(green-light)"
         },
         {
             "name": "Number Suffix",
             "scope": "storage.type.numeric",
-            "foreground": "var(green3)",
+            "foreground": "var(green-light)",
             "font_style": "italic"
         },
         {
             "name": "Built-in constant",
             "scope": "constant.language",
-            "foreground": "var(orange1)",
+            "foreground": "var(orange-entity)",
             "font_style": "italic"
         },
         {
             "name": "User-defined constant",
             "scope": "constant.character, constant.other",
-            "foreground": "var(orange1)"
+            "foreground": "var(orange-entity)"
         },
         {
             "name": "Member Variable",
@@ -112,7 +114,7 @@
         {
             "name": "Keyword",
             "scope": "keyword - keyword.operator, keyword.operator.word",
-            "foreground": "var(blue4)"
+            "foreground": "var(gray-copy)"
         },
         {
             "name": "Operators",
@@ -122,7 +124,7 @@
         {
             "name": "Punctuation",
             "scope": "punctuation.separator, punctuation.terminator",
-            "foreground": "var(blue4)"
+            "foreground": "var(gray-copy)"
         },
         {
             "name": "Punctuation",
@@ -132,7 +134,7 @@
         {
             "name": "Accessor",
             "scope": "punctuation.accessor",
-            "foreground": "var(blue4)"
+            "foreground": "var(gray-copy)"
         },
         {
             "name": "Annotation Punctuation",
@@ -152,18 +154,18 @@
         {
             "name": "Storage type",
             "scope": "storage.type",
-            "foreground": "var(blue7)",
+            "foreground": "var(blue-storage)",
             "font_style": "italic"
         },
         {
             "name": "Entity name",
             "scope": "entity.name.function",
-            "foreground": "var(orange1)"
+            "foreground": "var(orange-entity)"
         },
         {
             "name": "Entity name",
             "scope": "entity.name - (entity.name.section | entity.name.tag | entity.name.label)",
-            "foreground": "var(orange1)"
+            "foreground": "var(orange-entity)"
         },
         {
             "name": "Inherited class",
@@ -174,7 +176,7 @@
         {
             "name": "Function argument",
             "scope": "variable.parameter",
-            "foreground": "var(green5)"
+            "foreground": "var(green)"
         },
         {
             "name": "Language variable",
@@ -185,34 +187,34 @@
         {
             "name": "Tag name",
             "scope": "entity.name.tag",
-            "foreground": "var(blue7)"
+            "foreground": "var(blue-storage)"
         },
         {
             "name": "Tag attribute",
             "scope": "entity.other.attribute-name",
-            "foreground": "var(orange1)"
+            "foreground": "var(orange-entity)"
         },
         {
             "name": "Function call",
             "scope": "variable.function, variable.annotation",
-            "foreground": "var(orange1)"
+            "foreground": "var(orange-entity)"
         },
         {
             "name": "Library function",
             "scope": "support.function, support.macro",
-            "foreground": "var(blue7)",
+            "foreground": "var(blue-storage)",
             "font_style": "italic"
         },
         {
             "name": "Library constant",
             "scope": "support.constant",
-            "foreground": "var(blue7)",
+            "foreground": "var(blue-storage)",
             "font_style": "italic"
         },
         {
             "name": "Library class/type",
             "scope": "support.type, support.class",
-            "foreground": "var(blue7)",
+            "foreground": "var(blue-storage)",
             "font_style": "italic"
         },
         {
@@ -230,7 +232,7 @@
         {
             "name": "YAML Key",
             "scope": "entity.name.tag.yaml",
-            "foreground": "var(blue4)"
+            "foreground": "var(gray-copy)"
         },
         {
             "name": "YAML String",
@@ -295,7 +297,7 @@
         {
             "name": "markup hr",
             "scope": "punctuation.definition.thematic-break",
-            "foreground": "var(orange1)"
+            "foreground": "var(orange-entity)"
         },
         {
             "name": "markup numbered list bullet",
@@ -305,7 +307,7 @@
         {
             "name": "markup blockquote",
             "scope": "markup.quote punctuation.definition.blockquote, markup.list punctuation.definition.list_item",
-            "foreground": "var(blue7)"
+            "foreground": "var(blue-storage)"
         },
         {
             "name": "markup code",
@@ -331,7 +333,7 @@
         {
             "name": "diff.deleted",
             "scope": "markup.deleted",
-            "foreground": "var(red4)"
+            "foreground": "var(red-error)"
         },
         {
             "name": "diff.inserted",
