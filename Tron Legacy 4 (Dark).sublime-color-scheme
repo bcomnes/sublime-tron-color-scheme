@@ -1,63 +1,52 @@
 {
-  "name": "Tron Legacy 4",
+  "name": "Tron Legacy 4 Dark",
   "author": "Hypermodules LLC, Bret Comnes",
   "variables": {
+    // Primary Colors
     "white": "hsl(0, 0%, 100%)",
     "black": "#000000",
+    "black-shadow": "color(var(black) alpha(0.25))",
     "red-string": "#FF410D",
     "red-error": "#F92672",
+    "red-error-background": "#660000",
     "green": "#95CC5E",
     "green-light": "#C7F026",
+    "green-light-subdue": "color(var(green-light) l(20%))",
+    "green-light-boost": "#A6E22E",
+    "green-light-boost-background": "#144212",
     "yellow-highlight": "#FFE792",
+    "yellow-highlight-subdue": "color(var(yellow-highlight) l(- 20%))",
     "orange-entity": "#FFB20D",
+    "orange-entity-dark": "#F79D1E",
+    "blue-pure": "#2F33AB",
     "blue-bg": "#14191f",
+    "blue-bg-highlight": "color(var(blue-bg) l(20%))",
     "blue-fg": "#aec2e0",
+    "blue-fg-white": "color(var(blue-fg) l(90%))",
     "blue-accent": "#6ee2ff",
     "blue-storage": "#267fb5",
     "blue-highlight": "#183c66",
+    "blue-highlight-contrast": "color(var(blue-highlight) min-contrast(var(blue-highlight) 2.5))",
+    "blue-hilight-subdue": "color(var(blue-highlight) l(20%))",
     "gray-copy": "#748aa6",
-    "purple1": "#967EFB",
-    "red5": "hsl(357, 79%, 65%)",
-    "red1": "#92003b",
-    "red3": "#660000",
-    "green9": "#144212",
-    "green2": "#635f2d",
-    "green10": "#75715E",
-    "green11": "#8FBE00A0",
-    "green1": "#7fb11b",
-    "green8": "#8FBE00",
-    "green4": "#A6E22E",
-
-    "gray5": "#1b232c",
-    "gray4": "#3B3A32",
-    "gray2": "#F8F8F2A5",
-    "gray7": "#CFCFC2",
-    "gray8": "#E6E1DC",
-    "gray3": "#F8F8F0",
-    "yellow2": "#e6db74",
-    "yellow3": "#E6DB74",
-
-    "orange2": "#F79D1E",
-    "blue3": "#324357",
-    "blue9": "#d0dfe6",
-    "blue5": "#00A8C6",
-    "blue8": "#2F33AB",
-    "pink": "hsl(300, 30%, 68%)"
+    "gray-copy-dark": "color(var(gray-copy) l(50%))",
+    "gray-comment": "color(#324357 min-contrast(var(blue-bg) 3))",
+    "purple-accent": "#967EFB"
   },
   "globals": {
     "foreground": "var(blue-fg)",
     "background": "var(blue-bg)",
     "accent": "var(blue-accent)",
-    "caret": "color(var(blue-fg) l(90%))",
-    "line_highlight": "color(var(blue-bg) l(20%))",
+    "caret": "var(yellow-highlight)",
+    "line_highlight": "var(blue-bg-highlight)",
     "selection": "var(blue-highlight)",
-    "selection_border": "color(var(blue-highlight) min-contrast(var(blue-highlight) 2.5))",
-    "inactive_selection": "color(var(blue-highlight) l(20%))",
+    "selection_border": "var(blue-highlight-contrast)",
+    "inactive_selection": "var(blue-hilight-subdue)",
     "misspelling": "var(red-error)",
-    "shadow": "color(var(black) alpha(0.25))",
+    "shadow": "var(black-shadow)",
     "active_guide": "var(green-light)",
-    "stack_guide": "color(var(green-light) l(20%))",
-    "highlight": "color(var(yellow-highlight) l(- 20%))",
+    "stack_guide": "var(green-light-subdue)",
+    "highlight": "var(yellow-highlight-subdue)",
     "find_highlight_foreground": "var(blue-bg)",
     "find_highlight": "var(yellow-highlight)",
     "brackets_options": "underline",
@@ -66,13 +55,13 @@
     "bracket_contents_foreground": "var(green-light)",
     "tags_options": "stippled_underline",
     "tags_foreground": "var(green-light)"
-  },
+  }, // Comments
   "rules":
     [
         {
             "name": "Comment",
             "scope": "comment, punctuation.definition.comment",
-            "foreground": "var(blue3)"
+            "foreground": "var(gray-comment)"
         },
         {
             "name": "String",
@@ -82,7 +71,7 @@
         {
             "name": "Punctuation",
             "scope": "punctuation.definition - punctuation.definition.numeric.base",
-            "foreground": "var(gray-copy)"
+            "foreground": "var(blue-fg)"
         },
         {
             "name": "Number",
@@ -109,7 +98,12 @@
         {
             "name": "Member Variable",
             "scope": "variable.member",
-            "foreground": "var(blue9)"
+            "foreground": "var(blue-fg-white)"
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "foreground": "var(blue-fg-white)"
         },
         {
             "name": "Keyword",
@@ -119,37 +113,38 @@
         {
             "name": "Operators",
             "scope": "keyword.operator",
-            "foreground": "var(blue5)"
+            "foreground": "var(gray-copy)"
         },
         {
             "name": "Punctuation",
             "scope": "punctuation.separator, punctuation.terminator",
-            "foreground": "var(gray-copy)"
+            "foreground": "var(gray-copy-dark)"
         },
         {
             "name": "Punctuation",
             "scope": "punctuation.section",
-            "foreground": "var(white)"
+            "foreground": "var(blue-fg)"
         },
         {
             "name": "Accessor",
             "scope": "punctuation.accessor",
-            "foreground": "var(gray-copy)"
+            "foreground": "var(blue-fg-white)"
         },
         {
             "name": "Annotation Punctuation",
             "scope": "punctuation.definition.annotation",
-            "foreground": "var(blue5)"
+            "foreground": "var(blue-accent)"
         },
         {
             "name": "JavaScript Dollar",
             "scope": "variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js, support.class.dollar.only.js",
-            "foreground": "var(blue5)"
+            "foreground": "var(blue-accent)"
         },
         {
-            "name": "Storage",
+            "name": "Storage", // Global keyword python
             "scope": "storage",
-            "foreground": "var(white)"
+            "foreground": "var(white)",
+            "font_style": "bold"
         },
         {
             "name": "Storage type",
@@ -170,7 +165,7 @@
         {
             "name": "Inherited class",
             "scope": "entity.other.inherited-class",
-            "foreground": "var(orange2)",
+            "foreground": "var(orange-entity-dark)",
             "font_style": "italic"
         },
         {
@@ -181,7 +176,7 @@
         {
             "name": "Language variable",
             "scope": "variable.language",
-            "foreground": "var(purple1)",
+            "foreground": "var(purple-accent)",
             "font_style": "italic"
         },
         {
@@ -192,7 +187,12 @@
         {
             "name": "Tag attribute",
             "scope": "entity.other.attribute-name",
-            "foreground": "var(orange-entity)"
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Tag text",
+            "scope": "text.html.basic",
+            "foreground": "var(blue-fg-white)"
         },
         {
             "name": "Function call",
@@ -220,14 +220,14 @@
         {
             "name": "Invalid",
             "scope": "invalid",
-            "foreground": "var(white2)",
-            "background": "var(blue5)"
+            "foreground": "var(blue-fg)",
+            "background": "var(red-string)"
         },
         {
             "name": "Invalid deprecated",
             "scope": "invalid.deprecated",
-            "foreground": "var(gray3)",
-            "background": "var(green8)"
+            "foreground": "var(blue-fg)",
+            "background": "var(green-light-subdue)"
         },
         {
             "name": "YAML Key",
@@ -237,7 +237,12 @@
         {
             "name": "YAML String",
             "scope": "source.yaml string.unquoted",
-            "foreground": "var(blue9)"
+            "foreground": "var(blue-fg-white)"
+        },
+        {
+            "name": "YAML String",
+            "scope": "source.yaml string.quoted",
+            "foreground": "var(orange-entity)"
         },
         {
             "name": "markup headings",
@@ -247,17 +252,22 @@
         {
             "name": "markup headings",
             "scope": "markup.heading punctuation.definition.heading",
-            "foreground": "var(blue5)"
+            "foreground": "var(blue-accent)"
         },
         {
             "name": "markup h1",
             "scope": "markup.heading.1 punctuation.definition.heading",
-            "foreground": "var(blue-accent)"
+            "foreground": "var(green-light)"
         },
         {
             "name": "markup links",
             "scope": "string.other.link, markup.underline.link",
-            "foreground": "var(gray8)"
+            "foreground": "var(gray-copy-dark)"
+        },
+        {
+            "name": "markup paragraph",
+            "scope": "meta.paragraph",
+            "foreground": "var(blue-fg-white)"
         },
         {
             "name": "markup bold",
@@ -302,7 +312,7 @@
         {
             "name": "markup numbered list bullet",
             "scope": "markup.list.numbered.bullet",
-            "foreground": "var(green1)"
+            "foreground": "var(green-light-boost)"
         },
         {
             "name": "markup blockquote",
@@ -312,72 +322,57 @@
         {
             "name": "markup code",
             "scope": "markup.raw",
-            "background": "color(var(blue1) alpha(0.38))"
+            "background": "color(var(blue-bg-highlight) alpha(0.5))"
         },
         {
             "name": "markup code",
             "scope": "markup.raw.inline",
-            "background": "color(var(blue1) alpha(0.5))"
+            "background": "color(var(blue-bg-highlight) alpha(0.5))"
         },
         {
             "name": "markup punctuation",
             "scope": "(text punctuation.definition.italic | text punctuation.definition.bold)",
-            "foreground": "var(green4)"
+            "foreground": "var(green)"
         },
         {
             "name": "diff.header",
             "scope": "meta.diff, meta.diff.header",
-            "foreground": "var(green10)",
-            "background": "var(blue8)"
+            "foreground": "var(blue-fg-white)",
+            "background": "var(blue-pure)"
         },
         {
             "name": "diff.deleted",
-            "scope": "markup.deleted",
-            "foreground": "var(red-error)"
+            "scope": "markup.deleted, punctuation.definition.deleted.diff",
+            "foreground": "var(red-error)",
+            "background": "var(red-error-background)"
         },
         {
             "name": "diff.inserted",
-            "scope": "markup.inserted",
-            "foreground": "var(green4)"
+            "scope": "markup.inserted, punctuation.definition.inserted.diff",
+            "foreground": "var(green-light-boost)",
+            "background": "var(green-light-boost-background)"
         },
         {
             "name": "diff.changed",
             "scope": "markup.changed",
-            "foreground": "var(purple1)"
+            "foreground": "var(purple-accent)"
         },
         {
             "name": "CSS Properties",
             "scope": "support.type.property-name",
-            "foreground": "var(gray3)"
+            "foreground": "var(blue-fg-white)"
+        },
+        {
+            "scope": "constant.numeric.line-number",
+            "foreground": "var(green-light-subdue)"
         },
         {
             "scope": "constant.numeric.line-number.match",
-            "foreground": "var(green11)"
+            "foreground": "var(green-light)"
         },
         {
             "scope": "message.error",
             "foreground": "var(blue-accent)"
-        },
-
-        {
-            "scope": "diff.deleted",
-            "background": "hsla(357, 45%, 60%, 0.15)",
-            "foreground_adjust": "l(+ 5%)"
-        },
-        {
-            "scope": "diff.deleted.char",
-            "background": "hsla(357, 60%, 60%, 0.30)",
-            "foreground_adjust": "l(+ 10%)"
-        },
-        {
-            "scope": "diff.inserted",
-            "background": "hsla(180, 45%, 60%, 0.15)",
-            "foreground_adjust": "l(+ 5%)"
-        },
-        {
-            "scope": "diff.inserted.char",
-            "background": "hsla(180, 60%, 60%, 0.30)",
-            "foreground_adjust": "l(+ 10%)"
-        },
+        }
     ]
 }
