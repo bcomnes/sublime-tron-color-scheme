@@ -160,7 +160,18 @@
         {
             "name": "Entity name",
             "scope": "entity.name - (entity.name.section | entity.name.tag | entity.name.label)",
-            "foreground": "var(orange-entity)"
+            "foreground": "var(blue-fg-white)"
+        },
+        {
+            "name": "Entity variable name",
+            "scope": "entity.name.variable, entity.name.globals",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Entity Class name",
+            "scope": "entity.name.class, variable.other.class",
+            "foreground": "var(orange-entity)",
+            "font_style": "italic bold underline"
         },
         {
             "name": "Inherited class",
@@ -206,6 +217,16 @@
             "font_style": "italic"
         },
         {
+            "name": "Node.js require function",
+            "scope": "support.function.node",
+            "foreground": "var(orange-entity)"
+        },
+        {
+            "name": "Map Keys",
+            "scope": "meta.mapping.key",
+            "foreground": "var(green)"
+        },
+        {
             "name": "Library constant",
             "scope": "support.constant",
             "foreground": "var(blue-storage)",
@@ -232,7 +253,7 @@
         {
             "name": "YAML Key",
             "scope": "entity.name.tag.yaml",
-            "foreground": "var(gray-copy)"
+            "foreground": "var(green)"
         },
         {
             "name": "YAML String",
