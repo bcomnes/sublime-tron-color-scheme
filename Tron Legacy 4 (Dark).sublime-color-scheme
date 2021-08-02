@@ -198,7 +198,7 @@
         {
             "name": "Tag attribute",
             "scope": "entity.other.attribute-name",
-            "foreground": "var(green)"
+            "foreground": "var(orange-entity-dark)"
         },
         {
             "name": "Tag text",
