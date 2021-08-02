@@ -54,7 +54,13 @@
     "bracket_contents_options": "stippled_underline",
     "bracket_contents_foreground": "var(green-light)",
     "tags_options": "stippled_underline",
-    "tags_foreground": "var(green-light)"
+    "tags_foreground": "var(green-light)",
+    "line_diff_added": "var(green-light)",
+    "line_diff_modified": "var(yellow-highlight-subdue)",
+    "line_diff_deleted": "var(red-error)",
+    "brackets_options": "glow",
+    "bracket_contents_options": "glow",
+    "tags_options": "glow"
   }, // Comments
   "rules":
     [
