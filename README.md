@@ -1,65 +1,22 @@
 # sublime-tron-color-scheme
 
-A standalone fork of the Tron and Tron Legacy color schemes from [ColorSublime](http://colorsublime.com/?q=tron). Install the following package control package:
+A standalone fork (and modification) of the Tron and Tron Legacy color schemes from [ColorSublime](http://colorsublime.com/?q=tron). Install the following package control package:
 
 ```
 Tron Color Scheme
 ```
 
-ColorSublime is fun to play around with, but a second package manager for color schemes is a bit excessive.
+Supports all major syntaxes, Sublime Text 4 and is based on the new Marina syntax definition file (with some additional features.)
 
-Pairs nicely with the [spacegray](https://github.com/kkga/spacegray) UI theme and [Java​Script​Next - ES6 Syntax](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax) extended syntax highlighting.
+![](screenshots/js.png)
 
-Lacks good markdown or JSON support.  See [#Caveats](#caveats)
+![](screenshots/md.png)
 
-![](legacy.png)
+![](screenshots/py.png)
 
-![](tron.png)
+![](screenshots/c.png)
 
-## Caveats
-
-These themes have poor support for basic markdown currently.  (Somone should totally fix that by adding extended markdown support!)  The following sublime packages provide excellent markdown support:
-
-- [Monokai Neue](https://packagecontrol.io/packages/Monokai%20Neue)
-- [Monokai Extended](https://packagecontrol.io/packages/Monokai%20Extended)
-- [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended)
-
-Its possible to set up syntax specific color highlighting to use an additional color scheme for markdown in lieu of Tron markdown support for the time being.
-
-Here are some examples of how to do that:
-
-**Sublime Text 3/Packages/User/Markdown Extended.sublime-settings** (or Markdown.sublime-settings):
-
-```json
-{
-  "extensions":
-  [
-    "md",
-    "markdown",
-    "mdown",
-    "mkdn"
-  ],
-  "color_scheme": "Packages/Monokai Extended/Monokai Extended Bright.tmTheme"
-}
-```
-
-**Sublime Text 3/Packages/User/JSON.sublime-settings:**
-
-```json
-{
-	"color_scheme": "Packages/Monokai Neue/Monokai-Neue.tmTheme",
-	"draw_white_space": "all",
-	"extensions":
-	[
-		"json",
-		"sublime-settings"
-	],
-	"tab_size": 2
-}
-
-```
-
-**Sublime Text 3/Packages/User/Markdown Extended.sublime-settings:**
+![](screenshots/diff.png)
 
 ## Acknowledgments
 
