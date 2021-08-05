@@ -1,0 +1,13 @@
+Tron Color Scheme
+-----------------
+
+2.0.0
+
+- Totall rewrite.
+- New theme name, your settings might be broken until you select the new `Tron Legacy 4 (Dark)` color scheme.
+- Other Tron theme variants have been removed. I can't justify maintaining them, I've never even met anyone who uses them!
+- A light theme is planned, but it needs more work.
+
+If I caused you a headache, my appologies in advance. Open an issue and we can figure out a solution.
+
+
