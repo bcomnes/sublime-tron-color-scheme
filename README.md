@@ -26,5 +26,5 @@ Thank you Dayle Rees and Tim Heckman, the original creators of this fantastic th
 
 ## See Also
 
-- [Tron Legacy Atom](https://atom.io/themes/tron-legacy)
+- [Tron Legacy Atom](https://atom.io/themes/one-tron-legacy-syntax)
 - [Tron Legacy VSCode](https://marketplace.visualstudio.com/items?itemName=bcomnes.tron-legacy)
